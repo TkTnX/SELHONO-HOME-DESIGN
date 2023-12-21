@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Serif+Display:regular);
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+:root {
+  --textColor: #292f36;
+  --accent: #cda274;
+}
+
+body {
+  color: var(--textColor);
+}
+
+[class*="__container"] {
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "DM Serif Display", sans-serif;
+}
+
+.currentPage {
+  color: #c76904 !important;
+
+  &:hover {
+    color: #c76904b2 !important;
+  }
+}
