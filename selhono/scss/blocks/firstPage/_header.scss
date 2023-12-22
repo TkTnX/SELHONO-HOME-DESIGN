@@ -9,12 +9,32 @@
     justify-content: space-between;
   }
 
+  &__burger-menuBtn {
+    @media (max-width: 650px) {
+      height: 25px;
+      width: 40px;
+
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      order: 2;
+      span {
+        background-color: black;
+
+        height: 3px;
+        width: 100%;
+      }
+    }
+  }
   // .header__logo
 
   &__logo {
     display: flex;
     align-items: center;
     gap: 7px;
+    @media (max-width: 650px) {
+      margin-right: auto;
+    }
   }
 
   // .header__title
@@ -23,6 +43,12 @@
     font-size: 40px;
     font-weight: 400;
     line-height: 1.25; /* 50px */
+    @media (max-width: 900px) {
+      display: none;
+    }
+    @media (max-width: 650px) {
+      display: block;
+    }
   }
 
   // .header__list
@@ -31,6 +57,9 @@
     display: flex;
     align-items: center;
     gap: clamp(1rem, 0.227rem + 3.86vw, 3.125rem);
+    @media (max-width: 650px) {
+      display: none;
+    }
   }
 
   // .header__link
@@ -45,6 +74,9 @@
 
     &:hover {
       color: #292f36ab;
+    }
+    &:active {
+      color: #1c1e22;
     }
   }
 }

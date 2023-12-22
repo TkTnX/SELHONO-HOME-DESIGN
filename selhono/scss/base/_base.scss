@@ -9,12 +9,14 @@
 
 body {
   color: var(--textColor);
+  overflow-x: hidden;
 }
 
 [class*="__container"] {
   max-width: 1210px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 
 body {
@@ -27,4 +29,12 @@ body {
   &:hover {
     color: #c76904b2 !important;
   }
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.none {
+  display: none;
 }

@@ -4,6 +4,9 @@
   &_text {
     padding: 73px 25px;
     max-width: 700px;
+    @media (max-width: 395px) {
+      padding-top: 50%;
+    }
   }
 
   // .title__container
@@ -17,15 +20,23 @@
 
     background-color: #999;
     border-radius: 100px 0;
+
+    @media (max-width: 495px) {
+      background-position: right;
+    }
   }
 
   // .title__text-title
 
   &__text-title {
     color: #fff;
-    font-size: clamp(1.5rem, 0.568rem + 4.66vw, 4.063rem);
+    font-size: clamp(3rem, 2.636rem + 1.82vw, 4rem);
     font-weight: 400;
     line-height: 1.25; /* 81.25px */
+
+    @media (max-width: 395px) {
+      font-size: 36px;
+    }
   }
 
   // .title__text-subtitle
@@ -73,4 +84,3 @@
     }
   }
 }
-

@@ -1,0 +1,59 @@
+.header {
+  // .header__burger-menu
+
+  &__burger-menu {
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--accent);
+    padding: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+    @media (max-width: 650px) {
+      display: block;
+    }
+  }
+
+  &__burger-active {
+    transform: translateX(0);
+  }
+
+  // .header__burger-inner
+
+  &__burger-inner {
+    height: 80%;
+  }
+
+  // .header__burger-list
+
+  &__burger-list {
+    padding: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  // .header__burger-item
+
+  &__burger-item {
+  }
+
+  // .header__burger-link
+
+  &__burger-link {
+    color: var(--textColor);
+    font-family: "Jost";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    transition: color 0.2s;
+
+    &:hover {
+      color: rgb(54, 54, 54);
+    }
+  }
+}

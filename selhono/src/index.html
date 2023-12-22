@@ -9,6 +9,11 @@
   <body>
     <header class="header">
       <div class="header__container">
+        <button id="headerBurgerBtn" class="header__burger-menuBtn none">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <div class="header__logo">
           <img
             src="./../img/icons/logo.svg"
@@ -37,6 +42,7 @@
             <li class="header__item">
               <a href="#" class="header__link">Contact</a>
             </li>
+
             <li class="header__item-search">
               <img
                 src="./../img/icons/Search.svg"
@@ -46,10 +52,41 @@
             </li>
           </ul>
         </nav>
+        <div class="header__burger-menu none" id="headerBurgerMenu">
+          <div class="header__burger-inner">
+            <ul class="header__burger-list">
+              <li class="header__burger-item">
+                <a href="#" class="header__burger-link">Home</a>
+              </li>
+              <li class="header__burger-item">
+                <a href="#" class="header__burger-link">Pages</a>
+              </li>
+              <li class="header__burger-item">
+                <a href="#" class="header__burger-link">Services</a>
+              </li>
+              <li class="header__burger-item">
+                <a href="#" class="header__burger-link">Project</a>
+              </li>
+              <li class="header__burger-item">
+                <a href="#" class="header__burger-link">Blog</a>
+              </li>
+              <li class="header__burger-item">
+                <a href="#" class="header__burger-link">Contact</a>
+              </li>
+              <li class="header__item-search">
+                <img
+                  src="./../img/icons/Search.svg"
+                  alt="Поиск"
+                  class="header__item-icon"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <section class="title">
+       <section class="title">
         <div class="title__container">
           <div class="title_text">
             <h1 class="title__text-title">
@@ -62,7 +99,9 @@
             <a href="#" class="title__text-btn"> Get Started </a>
           </div>
         </div>
-      </section>
+      </section> 
     </main>
+
+    <script src="./../js/main.js"></script>
   </body>
 </html>
