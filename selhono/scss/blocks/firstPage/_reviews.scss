@@ -1,0 +1,114 @@
+.reviews {
+  margin-top: 194px;
+
+  // .reviews__container
+
+  &__container {
+    background-color: #d8a876;
+    border-radius: 70px;
+    padding: 88px 30px;
+    @media (max-width: 902px) {
+      border-radius: 0;
+    }
+    @media (max-width: 475px) {
+      padding: 88px 5px;
+    }
+  }
+
+  // .reviews__title
+
+  &__title {
+    color: #fff;
+
+    text-align: center;
+    font-size: clamp(2rem, 1.591rem + 2.05vw, 3.125rem);
+    font-weight: 400;
+    line-height: 1.25; /* 62.5px */
+    letter-spacing: 1px;
+  }
+
+  // .reviews__cards
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 38px;
+    gap: 15px;
+
+    @media (max-width: 902px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  // .reviews__card
+
+  &__card {
+    background-color: #fff;
+    max-width: 370px;
+    border-radius: 30px;
+
+    padding: 53px 37px 85px;
+    @media (max-width: 816px) {
+      max-width: 700px;
+    }
+  }
+
+  // .reviews__card-title
+
+  &__card-title {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  // .reviews__card-img
+
+  &__card-img img {
+    border-radius: 50%;
+    min-height: 40px;
+    min-width: 40px;
+  }
+
+  // .reviews__card-user
+
+  &__card-user {
+  }
+
+  // .reviews__card-name
+
+  &__card-name {
+    color: #292f36;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5; /* 37.5px */
+    letter-spacing: 0.25px;
+  }
+
+  // .reviews__card-city
+
+  &__card-city {
+    color: #4d5053;
+    font-family: "Jost";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.18px;
+  }
+
+  // .reviews__card-text
+
+  &__card-text {
+    padding-top: 25px;
+
+    color: #4d5053;
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5; /* 33px */
+    letter-spacing: 0.22px;
+  }
+}

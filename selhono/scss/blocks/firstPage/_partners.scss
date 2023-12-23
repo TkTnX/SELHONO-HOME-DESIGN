@@ -1,0 +1,23 @@
+.partners {
+  margin-top: 188px;
+
+  // .partners__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+  }
+
+  // .partners__img
+
+  &__img {
+    min-width: 300px;
+  }
+}
+
+.partners-img {
+  height: 100px;
+  object-fit: contain;
+}

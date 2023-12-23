@@ -320,6 +320,7 @@ body {
   font-weight: 600;
   line-height: 1.25; /* 22.5px */
   letter-spacing: 0.36px;
+  transition: all 0.2s;
 }
 .title__text-btn::before {
   content: "";
@@ -331,4 +332,344 @@ body {
   bottom: -5px;
   background-size: auto;
   background-repeat: no-repeat;
+}
+.title__text-btn:hover {
+  background-color: #ccaa86;
+}
+.title__text-btn:active {
+  background-color: #d8a874;
+}
+
+.offers {
+  margin-top: 95px;
+}
+.offers__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .offers__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+.offers__card-title {
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 31.25px */
+}
+.offers__card-description {
+  padding-top: 20px;
+  padding-bottom: 52px;
+  color: #4d5053;
+  text-align: center;
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5; /* 33px */
+  letter-spacing: 0.22px;
+  max-width: 360px;
+}
+@media (max-width: 780px) {
+  .offers__card-description {
+    padding-bottom: 10px;
+  }
+}
+.offers__card-read {
+  text-align: center;
+}
+.offers__card-link {
+  color: #4d5053;
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25; /* 22.5px */
+  letter-spacing: 0.36px;
+  position: relative;
+}
+.offers__card-link::after {
+  content: "";
+  position: absolute;
+  background-image: url("/selhono/img/icons/arrow-right-black.svg");
+  width: 20px;
+  height: 20px;
+  right: -36px;
+  bottom: 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.offers__card-link:hover {
+  color: #787b7e;
+}
+.offers__card-link:active {
+  color: black;
+}
+
+.modern {
+  margin-top: 154px;
+  position: relative;
+}
+.modern__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 940px) {
+  .modern__container {
+    flex-direction: column;
+  }
+}
+.modern__left {
+  background-color: #999;
+  background-image: url("/selhono/img/images/modern1.jpg");
+  width: 50%;
+  height: 700px;
+  border-radius: 0px 450px 0px 0px;
+  background-position: center right; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 142px;
+  padding-left: 25px;
+}
+@media (max-width: 940px) {
+  .modern__left {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 525px) {
+  .modern__left {
+    border-radius: 0px 250px 0px 0px;
+    padding-top: 200px;
+  }
+}
+@media (max-width: 320px) {
+  .modern__left {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.modern__title {
+  color: #fff;
+  font-size: clamp(2.5rem, -2.188rem + 7.5vw, 3.438rem);
+  font-weight: 400;
+  line-height: 1.25; /* 68.75px */
+  max-width: 368px;
+}
+@media (max-width: 940px) {
+  .modern__title {
+    font-size: clamp(2rem, 1.477rem + 2.61vw, 3.438rem);
+  }
+}
+.modern__desc {
+  color: #fff;
+  font-family: "Jost";
+  font-size: clamp(1.125rem, -0.125rem + 2vw, 1.375rem);
+  font-weight: 500;
+  line-height: 1.5; /* 33px */
+  letter-spacing: 0.22px;
+  max-width: 324px;
+  padding: 20px 0;
+}
+@media (max-width: 940px) {
+  .modern__desc {
+    font-size: clamp(1.25rem, 1.114rem + 0.68vw, 1.625rem);
+  }
+}
+.modern__phone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.modern__phone-num {
+  color: #fff;
+  font-family: "Jost";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5; /* 36px */
+  letter-spacing: 0.24px;
+}
+.modern__phone-txt {
+  color: #fff;
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5; /* 33px */
+  letter-spacing: 0.22px;
+}
+.modern__btn {
+  margin-top: 47px;
+}
+.modern__link {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25; /* 22.5px */
+  letter-spacing: 0.36px;
+  border-radius: 18px;
+  background-color: var(--accent);
+  padding: 26px 56px 26px 31px;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  position: relative;
+  transition: all 0.2s;
+}
+.modern__link::after {
+  content: "";
+  position: absolute;
+  background-image: url("/selhono/img/icons/arrow-right.svg");
+  width: 50px;
+  height: 50px;
+  right: 0px;
+  bottom: -5px;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.modern__link:hover {
+  background-color: #ccaa86;
+}
+.modern__link:active {
+  background-color: #d8a874;
+}
+.modern__right {
+  background-color: #999;
+  background-image: url("/selhono/img/images/modern2.jpg");
+  width: 50%;
+  height: 700px;
+  background-position: 90% top; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 940px) {
+  .modern__right {
+    display: none;
+  }
+}
+.modern::before {
+  content: "";
+  position: absolute;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  background-color: #fff;
+  border-radius: 150px 500px 0px 0px;
+  background-position: 20px 10px; /* x y */
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+@media (max-width: 940px) {
+  .modern::before {
+    display: none;
+  }
+}
+
+.reviews {
+  margin-top: 194px;
+}
+.reviews__container {
+  background-color: #d8a876;
+  border-radius: 70px;
+  padding: 88px 30px;
+}
+@media (max-width: 902px) {
+  .reviews__container {
+    border-radius: 0;
+  }
+}
+@media (max-width: 475px) {
+  .reviews__container {
+    padding: 88px 5px;
+  }
+}
+.reviews__title {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(2rem, 1.591rem + 2.05vw, 3.125rem);
+  font-weight: 400;
+  line-height: 1.25; /* 62.5px */
+  letter-spacing: 1px;
+}
+.reviews__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 38px;
+  gap: 15px;
+}
+@media (max-width: 902px) {
+  .reviews__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.reviews__card {
+  background-color: #fff;
+  max-width: 370px;
+  border-radius: 30px;
+  padding: 53px 37px 85px;
+}
+@media (max-width: 816px) {
+  .reviews__card {
+    max-width: 700px;
+  }
+}
+.reviews__card-title {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.reviews__card-img img {
+  border-radius: 50%;
+  min-height: 40px;
+  min-width: 40px;
+}
+.reviews__card-name {
+  color: #292f36;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5; /* 37.5px */
+  letter-spacing: 0.25px;
+}
+.reviews__card-city {
+  color: #4d5053;
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.18px;
+}
+.reviews__card-text {
+  padding-top: 25px;
+  color: #4d5053;
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5; /* 33px */
+  letter-spacing: 0.22px;
+}
+
+.partners {
+  margin-top: 188px;
+}
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+}
+.partners__img {
+  min-width: 300px;
+}
+
+.partners-img {
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */

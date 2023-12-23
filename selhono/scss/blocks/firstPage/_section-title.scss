@@ -70,6 +70,7 @@
     font-weight: 600;
     line-height: 1.25; /* 22.5px */
     letter-spacing: 0.36px;
+    transition: all 0.2s;
 
     &::before {
       content: "";
@@ -81,6 +82,12 @@
       bottom: -5px;
       background-size: auto;
       background-repeat: no-repeat;
+    }
+    &:hover {
+      background-color: #ccaa86;
+    }
+    &:active {
+      background-color: #d8a874;
     }
   }
 }
