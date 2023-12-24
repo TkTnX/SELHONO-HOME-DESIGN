@@ -1,0 +1,56 @@
+.achivments {
+  margin-top: clamp(9.375rem, 5.42rem + 19.77vw, 20.25rem);
+  margin-bottom: clamp(9.375rem, 5.42rem + 19.77vw, 20.25rem);
+  // .achivments__container
+
+  &__container {
+  }
+
+  // .achivments__cards
+
+  &__cards {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    @media (max-width: 1000px) {
+      justify-content: center;
+    }
+  }
+
+  // .achivments__card
+
+  &__card:not(:last-child) {
+    border-right: 1px solid var(--accent);
+    padding-right: 6%;
+    @media (max-width: 725px) {
+      border: none;
+    }
+  }
+
+  // .achivments__title
+
+  &__title {
+    text-align: center;
+    color: var(--accent);
+    font-size: clamp(3.125rem, 2.33rem + 3.98vw, 5.313rem);
+
+    font-weight: 400;
+    line-height: 1.25; /* 106.25px */
+    letter-spacing: 1.7px;
+  }
+
+  // .achivments__description
+
+  &__description {
+    color: #4d5053;
+
+    font-family: "Jost";
+    font-size: 22px;
+
+    font-weight: 400;
+    line-height: 1.5; /* 33px */
+    letter-spacing: 0.22px;
+  }
+}

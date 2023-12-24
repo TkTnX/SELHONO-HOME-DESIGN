@@ -1,0 +1,165 @@
+.news {
+  // .news__container
+
+  &__container {
+  }
+
+  // .news__title
+
+  &__title {
+    text-align: center;
+    font-size: clamp(2rem, 1.364rem + 3.18vw, 3.75rem);
+
+    font-weight: 400;
+    line-height: 1.25; /* 75px */
+    letter-spacing: 1.2px;
+
+    margin-bottom: 30px;
+  }
+
+  // .news__description
+
+  &__description {
+    color: #4d5053;
+
+    text-align: center;
+    font-family: "Jost";
+    font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+
+    font-weight: 400;
+    line-height: 1.5; /* 42px */
+    letter-spacing: 0.28px;
+
+    max-width: 811px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // .news__cards
+
+  &__cards {
+    margin-top: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 1175px) {
+      justify-content: center;
+      gap: clamp(0rem, -0.455rem + 2.27vw, 1.25rem);
+    }
+  }
+
+  // .news__card
+
+  &__card {
+    max-width: 382px;
+    max-height: 520px;
+
+    border: 1px solid #e7e7e7;
+    border-radius: 62px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: #f4f0ec;
+    }
+  }
+
+  &__card-inner {
+    padding: 21px;
+  }
+
+  // .news__card-img
+
+  &__card-top {
+    position: relative;
+  }
+
+  &__card-img {
+    max-width: 100%;
+
+    border-radius: 35px 35px 0px 0px;
+  }
+
+  &__card-offer {
+    padding: 10px;
+
+    position: absolute;
+    bottom: 41px;
+    left: 24px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px 8px 8px 0px;
+
+    color: #fff;
+
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5; /* 24px */
+    letter-spacing: 0.16px;
+    text-transform: capitalize;
+
+    @media (max-width: 345px) {
+      font-size: 13px;
+      padding: 5px;
+      bottom: 30px;
+    }
+  }
+
+  // .news__card-title
+
+  &__card-title {
+    padding-top: 21px;
+
+    font-size: 25px;
+
+    font-weight: 400;
+    line-height: 1.25; /* 31.25px */
+    letter-spacing: 0.5px;
+  }
+
+  // .news__bottom
+
+  &__bottom {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .news__bottom-date
+
+  &__bottom-date {
+    color: #4d5053;
+
+    font-family: "Jost";
+    font-size: 16px;
+
+    font-weight: 400;
+    line-height: 1.5; /* 24px */
+    letter-spacing: 0.16px;
+    text-transform: capitalize;
+  }
+
+  // .news__bottom-link
+
+  &__bottom-link {
+  }
+
+  // .news__bottom-arrow
+
+  &__bottom-arrow {
+    transition: all 0.2s;
+
+    &:hover {
+      scale: 1.1;
+    }
+    &:active {
+      scale: 0.9;
+    }
+
+
+  }
+}

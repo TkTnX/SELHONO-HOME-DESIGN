@@ -1,0 +1,89 @@
+.footer {
+  margin-top: 123px;
+  // .footer__container
+
+  &__container {
+  }
+
+  // .footer__bg
+
+  &__bg {
+    padding: 80px 0 136px;
+
+    background-color: #999;
+    background-image: url("/selhono/img/images/footer-bg.jpg");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  // .footer__bg-title
+
+  &__bg-title {
+    color: #fff;
+
+    text-align: center;
+    font-size: clamp(2rem, 1.591rem + 2.05vw, 3.125rem);
+    font-weight: 400;
+    line-height: 1.25; /* 62.5px */
+
+    margin-bottom: 11px;
+  }
+
+  // .footer__bg-description
+
+  &__bg-description {
+    margin-bottom: 64px;
+    color: #fff;
+
+    text-align: center;
+    font-family: "Jost";
+    font-size: clamp(1.125rem, 1.034rem + 0.45vw, 1.375rem);
+
+    font-weight: 500;
+    line-height: 1.5; /* 33px */
+    letter-spacing: 0.22px;
+  }
+
+  // .footer__bg-link
+
+  &__bg-btn {
+    text-align: center;
+  }
+  &__bg-link {
+    color: #fff;
+
+    text-align: center;
+    font-family: "Jost";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.25; /* 22.5px */
+    letter-spacing: 0.36px;
+
+    padding: 26px 48px 26px 26px;
+
+    background-color: var(--accent);
+    border-radius: 18px;
+    box-shadow: 0px 10px 20px 0px #1f2022;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("/selhono/img/icons/arrow-right.svg");
+      width: 30px;
+      height: 30px;
+      right: 10px;
+      top: 40%;
+
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+    &:hover {
+      background-color: #ccaa86;
+    }
+    &:active {
+      background-color: #d8a874;
+    }
+  }
+}
