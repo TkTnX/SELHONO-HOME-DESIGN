@@ -40,7 +40,7 @@
   &__logo-desc {
     padding-top: 18px;
     padding-bottom: 32px;
-    color: #4d5053;
+    color: var(--pColor);
 
     font-family: "Jost";
     font-size: 22px;
@@ -102,7 +102,7 @@
   // .footer__contact-item
 
   &__contact-item {
-    color: #4d5053;
+    color: var(--pColor);
 
     font-family: "Jost";
     font-size: 22px;
@@ -117,7 +117,7 @@
   &__copyright {
     margin-top: 138px;
     text-align: center;
-    color: #4d5053;
+    color: var(--pColor);
     font-family: "Jost";
     font-size: 22px;
     font-style: normal;
@@ -152,7 +152,7 @@
   margin-bottom: 36px;
 }
 .footer-link {
-  color: #4d5053;
+  color: var(--pColor);
 
   font-family: "Jost";
   font-size: 20px;
@@ -166,5 +166,8 @@
   }
   &:active {
     color: black;
+  }
+  &:focus {
+    color: #787b7e;
   }
 }

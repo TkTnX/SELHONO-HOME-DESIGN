@@ -1,0 +1,171 @@
+.weDo {
+  margin-top: 133px;
+  // .weDo__container
+
+  &__container {
+  }
+
+  // .weDo__cards
+
+  &__cards {
+  }
+
+  // .weDo__card
+
+  &__card {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+
+    margin-bottom: 180px;
+    @media (max-width: 950px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+
+  // .weDo__text
+
+  &__text {
+    max-width: 500px;
+    padding-right: 30px;
+    @media (max-width: 950px) {
+      margin: 30px auto;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  // .weDo__title
+
+  &__title {
+    font-size: clamp(2.188rem, 1.847rem + 1.7vw, 3.125rem);
+
+    font-weight: 400;
+    line-height: 1.25; /* 62.5px */
+    letter-spacing: 1px;
+  }
+
+  // .weDo__description
+
+  &__description {
+    padding-top: 23px;
+    padding-bottom: 41px;
+
+    color: var(--pColor);
+
+    font-family: "Jost";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 33px */
+    letter-spacing: 0.22px;
+  }
+
+  // .weDo__btn
+
+  &__btn {
+    display: block;
+    padding: 26px 41px 26px 41px;
+    max-width: 220px;
+
+    background-color: var(--textColor);
+    border-radius: 18px;
+    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: #3e464e;
+    }
+    &:active {
+      background-color: #23262b;
+    }
+    &:focus {
+      background-color: #3e464e;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("/selhono/img/icons/arrow-right.svg");
+      width: 30px;
+      height: 30px;
+      right: 30px;
+      bottom: 15px;
+      background-size: auto;
+      background-repeat: no-repeat;
+
+      @media (max-width: 950px) {
+        right: 0px;
+      }
+    }
+    @media (max-width: 950px) {
+      margin-left: auto;
+      margin-right: auto;
+
+      text-align: center;
+    }
+  }
+
+  &__link {
+    padding-right: 30px;
+    color: #fff;
+    text-align: center;
+    font-family: "Jost";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25; /* 22.5px */
+    letter-spacing: 0.36px;
+  }
+
+  // .weDo__image
+
+  &__image {
+  }
+
+  // .weDo__img
+
+  &__img {
+    object-fit: contain;
+    min-width: 460px;
+    border-radius: 130px 0px 0px 0px;
+    @media (max-width: 950px) {
+      border-radius: 15px;
+      min-width: 0;
+      width: 100%;
+    }
+  }
+
+  // .weDo__border-left
+
+  &__border-right {
+    border-radius: 0px 130px 0px 0px;
+    @media (max-width: 950px) {
+      border-radius: 15px;
+      min-width: 0;
+      width: 100%;
+    }
+  }
+
+  &__card-left {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @media (max-width: 950px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+  &__card-leftText {
+    padding-left: 30px;
+    padding-right: 0;
+    @media (max-width: 950px) {
+      margin: 30px auto;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}

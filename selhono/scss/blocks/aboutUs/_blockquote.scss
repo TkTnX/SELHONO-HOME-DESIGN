@@ -1,0 +1,42 @@
+.aboutUs-blockquote {
+  margin-top: 133px;
+  &__container {
+  }
+  // .aboutUs-blockquote__inner
+  &__inner {
+
+    max-width: 751px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  // .aboutUs-blockquote__text
+
+  &__text {
+    text-align: center;
+
+    font-size: clamp(1.25rem, 0.909rem + 1.7vw, 2.188rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 43.75px */
+    letter-spacing: 0.7px;
+    padding-bottom: 34px;
+  }
+
+  // .aboutUs-blockquote__name
+
+  &__name {
+    display: block;
+    color: var(--pColor);
+
+    font-family: "Jost";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: 0.25px;
+    text-align: center;
+  }
+}

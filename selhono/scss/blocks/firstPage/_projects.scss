@@ -18,7 +18,7 @@
   // .projects__desc
 
   &__desc {
-    color: #4d5053;
+    color: var(--pColor);
     text-align: center;
     font-family: "Jost";
     font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
@@ -93,7 +93,7 @@
   // .projects__card-category
 
   &__card-category {
-    color: #4d5053;
+    color: var(--pColor);
 
     font-family: "Jost";
     font-size: 22px;
@@ -118,6 +118,9 @@
     }
     &:active {
       scale: 0.9;
+    }
+    &:focus {
+      scale: 1.1;
     }
   }
 }

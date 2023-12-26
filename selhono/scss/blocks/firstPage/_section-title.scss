@@ -89,5 +89,9 @@
     &:active {
       background-color: #d8a874;
     }
+    &:focus {
+      background-color: #ccaa86;
+      border-color: #d8a874;
+    }
   }
 }
