@@ -1519,4 +1519,199 @@ body {
   .talkForm__btn::after {
     right: 0px;
   }
+}
+
+.services {
+  background-color: #999;
+  background-image: url("/selhono/img/images/servicesBG.jpg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: clamp(5.625rem, 3.625rem + 10vw, 11.125rem);
+  padding-bottom: 90px;
+}
+.services__title {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: clamp(2.188rem, 1.392rem + 3.98vw, 4.375rem);
+  font-weight: 400;
+  line-height: 1.25; /* 87.5px */
+}
+
+.services__cards {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services__card {
+  margin-bottom: 88px;
+}
+
+.work {
+  margin-top: 205px;
+  margin-bottom: clamp(6.25rem, 2.682rem + 17.84vw, 16.063rem);
+}
+.work__title {
+  color: #363b41;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.25; /* 62.5px */
+}
+.work__subtitle {
+  margin-top: 46px;
+  text-align: center;
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5; /* 33px */
+  letter-spacing: 0.22px;
+  max-width: 802px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work__cards {
+  margin-top: 156px;
+}
+.work__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 121px;
+}
+@media (max-width: 920px) {
+  .work__card {
+    flex-direction: column;
+  }
+}
+.work__card-num1::after {
+  content: "01";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #c76904;
+  text-align: center;
+  font-size: clamp(3.125rem, 2.216rem + 4.55vw, 5.625rem);
+  font-weight: 400;
+  line-height: 1.5; /* 135px */
+  letter-spacing: 0.9px;
+}
+@media (max-width: 520px) {
+  .work__card-num1::after {
+    color: var(--accent);
+  }
+}
+.work__card-num2::after {
+  content: "02";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #c76904;
+  text-align: center;
+  font-size: clamp(3.125rem, 2.216rem + 4.55vw, 5.625rem);
+  font-weight: 400;
+  line-height: 1.5; /* 135px */
+  letter-spacing: 0.9px;
+}
+@media (max-width: 520px) {
+  .work__card-num2::after {
+    color: var(--accent);
+  }
+}
+.work__card-num3::after {
+  content: "03";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #c76904;
+  text-align: center;
+  font-size: clamp(3.125rem, 2.216rem + 4.55vw, 5.625rem);
+  font-weight: 400;
+  line-height: 1.5; /* 135px */
+  letter-spacing: 0.9px;
+}
+@media (max-width: 520px) {
+  .work__card-num3::after {
+    color: var(--accent);
+  }
+}
+.work__card-num4::after {
+  content: "04";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #c76904;
+  text-align: center;
+  font-size: clamp(3.125rem, 2.216rem + 4.55vw, 5.625rem);
+  font-weight: 400;
+  line-height: 1.5; /* 135px */
+  letter-spacing: 0.9px;
+}
+@media (max-width: 520px) {
+  .work__card-num4::after {
+    color: var(--accent);
+  }
+}
+.work__card-img img {
+  border-radius: 0px 300px 0px 400px;
+}
+@media (max-width: 520px) {
+  .work__card-img img {
+    border-radius: 0;
+  }
+}
+.work__card-imgR img {
+  border-radius: 300px 0px 400px 0px;
+}
+@media (max-width: 520px) {
+  .work__card-imgR img {
+    border-radius: 0;
+  }
+}
+.work__card-text {
+  margin-left: 93px;
+}
+@media (max-width: 920px) {
+  .work__card-text {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+.work__card-title {
+  color: #292f36;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.25; /* 43.75px */
+}
+.work__card-desc {
+  padding-top: 11px;
+  color: #4d5053;
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5; /* 33px */
+  letter-spacing: 0.22px;
+  max-width: 456px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work__card-left {
+  flex-direction: row-reverse;
+}
+@media (max-width: 920px) {
+  .work__card-left {
+    flex-direction: column;
+  }
+}
+.work__card-textR {
+  margin-left: 0;
 }/*# sourceMappingURL=main.css.map */

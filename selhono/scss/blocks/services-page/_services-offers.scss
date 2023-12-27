@@ -1,0 +1,15 @@
+
+.services {
+  // .services__cards
+
+  &__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  // .services__card
+
+  &__card {
+    margin-bottom: 88px;
+  }
+}
