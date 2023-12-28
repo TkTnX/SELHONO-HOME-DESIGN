@@ -12,5 +12,8 @@
 
 Во время разработки буду использовать HTML, SCSS, JS
 
+----
 
+## Посмотреть сайт в сети
 
+https://timur-selhono.netlify.app/
