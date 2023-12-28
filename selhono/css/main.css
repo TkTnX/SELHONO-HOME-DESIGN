@@ -1714,4 +1714,113 @@ body {
 }
 .work__card-textR {
   margin-left: 0;
+}
+
+.prices {
+  margin-bottom: clamp(6.25rem, 3.795rem + 12.27vw, 13rem);
+}
+.prices__title {
+  background-color: #999;
+  background-image: url("/selhono/img/images/pricesBG.jpg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: clamp(3.125rem, 2.67rem + 2.27vw, 4.375rem);
+  font-weight: 400;
+  padding: clamp(5.625rem, 3.625rem + 10vw, 11.125rem) 0 90px;
+}
+.prices__cards {
+  margin-top: clamp(5.625rem, 3.511rem + 10.57vw, 11.438rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 850px) {
+  .prices__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+}
+.prices__card {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5; /* 37.5px */
+  letter-spacing: 0.25px;
+}
+.prices__card-price {
+  line-height: 1.2;
+}
+.prices__card-price span {
+  font-size: 85px;
+}
+.prices__card-list {
+  padding-top: 65px;
+}
+.prices__card-item {
+  color: #4d5053;
+  text-align: center;
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.5; /* 50px */
+  letter-spacing: 0.2px;
+}
+.prices__card-btn {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 26px 73px 26px 48px;
+  color: #fff;
+  background-color: var(--textColor);
+  text-align: center;
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  border-radius: 18px;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+.prices__card-btn:hover {
+  background-color: #3e464e;
+}
+.prices__card-btn:active {
+  background-color: #23262b;
+}
+.prices__card-btn:focus {
+  background-color: #3e464e;
+}
+.prices__card-btn::after {
+  content: "";
+  position: absolute;
+  background-image: url("/selhono/img/icons/arrow-right.svg");
+  width: 30px;
+  height: 30px;
+  bottom: 18px;
+  right: 30px;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.card__popular-price {
+  color: var(--accent);
+}
+
+.card__popular-btn {
+  background-color: var(--accent);
+}
+.card__popular-btn:hover {
+  background-color: #ccaa86;
+}
+.card__popular-btn:active {
+  background-color: #d8a874;
+}
+.card__popular-btn:focus {
+  background-color: #ccaa86;
+  border-color: #d8a874;
 }/*# sourceMappingURL=main.css.map */
