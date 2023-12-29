@@ -1823,4 +1823,145 @@ body {
 .card__popular-btn:focus {
   background-color: #ccaa86;
   border-color: #d8a874;
+}
+
+.project__title {
+  background-color: #999;
+  background-image: url("/selhono/img/images/pricesBG.jpg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: clamp(3.125rem, 2.67rem + 2.27vw, 4.375rem);
+  font-weight: 400;
+  padding: clamp(5.625rem, 3.625rem + 10vw, 11.125rem) 0 90px;
+}
+.project__category {
+  padding-top: 37px;
+}
+.project__list {
+  display: flex;
+  gap: 96px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent);
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 18px;
+  padding: 0 15px;
+}
+@media (max-width: 780px) {
+  .project__list {
+    border: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.project__item {
+  padding: 26px 0;
+}
+.project__link {
+  color: #292f36;
+  text-align: center;
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+  transition: all 0.2s ease-in;
+}
+.project__link:hover {
+  color: #3e464e;
+}
+.project__link:active {
+  color: #23262b;
+}
+.project__link:focus {
+  color: #3e464e;
+}
+
+.currentProject {
+  color: #fff;
+  background-color: var(--accent);
+  padding: 22px 66px;
+  border-radius: 18px;
+}
+.currentProject:hover {
+  background-color: #ccaa86;
+  color: #fff;
+}
+.currentProject:active {
+  background-color: #d8a874;
+}
+.currentProject:focus {
+  background-color: #ccaa86;
+  border-color: #d8a874;
+  color: #fff;
+}
+
+.project__cards {
+  padding-top: 38px;
+  display: flex;
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 38px;
+}
+@media (max-width: 1200px) {
+  .project__cards {
+    justify-content: center;
+  }
+}
+@media (max-width: 750px) {
+  .project__card {
+    padding: 0 15px;
+  }
+}
+.project__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 42px;
+  align-items: center;
+}
+.project__name h4 {
+  color: #292f36;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 300px) {
+  .project__name h4 {
+    font-size: 20px;
+  }
+}
+.project__name p {
+  color: #4d5053;
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5; /* 33px */
+  letter-spacing: 0.22px;
+}
+@media (max-width: 300px) {
+  .project__name p {
+    font-size: 16px;
+  }
+}
+.project__arrow {
+  display: block;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.project__arrow:hover {
+  scale: 1.1;
+}
+.project__arrow:active {
+  scale: 0.9;
+}
+.project__arrow:focus {
+  scale: 1.1;
 }/*# sourceMappingURL=main.css.map */

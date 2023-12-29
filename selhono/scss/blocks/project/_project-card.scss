@@ -1,0 +1,84 @@
+.project {
+  // .project__cards
+
+  &__cards {
+    padding-top: 38px;
+    display: flex;
+
+    max-width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 38px;
+
+    @media (max-width: 1200px) {
+      justify-content: center;
+    }
+  }
+
+  // .project__card
+
+  &__card {
+    @media (max-width: 750px) {
+      padding: 0 15px;
+    }
+  }
+
+  // .project__img
+
+  &__img {
+  }
+
+  // .project__content
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+    align-items: center;
+  }
+
+  // .project__name
+
+  &__name {
+    h4 {
+      color: #292f36;
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      @media (max-width: 300px) {
+        font-size: 20px;
+      }
+    }
+    p {
+      color: #4d5053;
+
+      font-family: "Jost";
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.5; /* 33px */
+      letter-spacing: 0.22px;
+      @media (max-width: 300px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // .project__arrow
+
+  &__arrow {
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    &:hover {
+      scale: 1.1;
+    }
+    &:active {
+      scale: 0.9;
+    }
+    &:focus {
+      scale: 1.1;
+    }
+  }
+}

@@ -36,3 +36,4 @@ const swiper = new Swiper(".design__swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
