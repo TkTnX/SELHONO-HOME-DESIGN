@@ -1,0 +1,111 @@
+.projectDetails {
+  // .projectDetails__content
+
+  &__content {
+    padding-top: 118px;
+  }
+
+  // .projectDetails__container
+
+  &__container {
+  }
+
+  // .projectDetails__content-text
+
+  &__content-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: clamp(3.125rem, -59.184rem + 89.41vw, 7.875rem);
+    @media (max-width: 1055px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  // .projectDetails__content-left
+
+  &__content-left {
+    color: #4d5053;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5; /* 33px */
+    letter-spacing: 0.22px;
+  }
+
+  // .projectDetails__table-category
+
+  &__table-category {
+  }
+
+  // .projectDetails__table-name
+
+  &__table-name {
+    padding-left: 50px;
+    font-family: "Jost";
+  }
+
+  // .projectDetails__content-right
+
+  &__content-right {
+    max-width: 653px;
+  }
+
+  // .projectDetails__content-title
+
+  &__content-title {
+    padding-bottom: 11px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.25; /* 62.5px */
+    letter-spacing: 1px;
+    @media (max-width: 590px) {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  // .projectDetails__content-desc
+
+  &__content-desc {
+    color: #4d5053;
+
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5; /* 33px */
+    letter-spacing: 0.22px;
+  }
+
+  // .projectDetails__content-look
+
+  &__content-look {
+    margin-top: 118px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+
+      background-image: url("/selhono/img/details/zoomIc.svg");
+
+      width: 52px;
+      height: 52px;
+
+      background-size: auto;
+      background-repeat: no-repeat;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      cursor: pointer;
+    }
+    img {
+      min-height: 290px;
+      @media (max-width: 470px) {
+        min-height: 240px;
+      }
+    }
+
+    margin-bottom: clamp(6.25rem, 3.295rem + 14.77vw, 14.375rem);
+  }
+}

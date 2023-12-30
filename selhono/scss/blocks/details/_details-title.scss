@@ -1,0 +1,23 @@
+.projectDetails {
+  // .projectDetails__title
+
+  &__title {
+    background-color: #999;
+    background-image: url("/selhono/img/images/detailsBG.jpg");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: #fff;
+
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: clamp(3.125rem, 2.67rem + 2.27vw, 4.375rem);
+    font-weight: 400;
+
+    padding: clamp(5.625rem, 3.625rem + 10vw, 11.125rem) 0 90px;
+    @media (max-width: 320px) {
+      font-size: 40px;
+    }
+  }
+}

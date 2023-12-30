@@ -1964,4 +1964,99 @@ body {
 }
 .project__arrow:focus {
   scale: 1.1;
+}
+
+.projectDetails__title {
+  background-color: #999;
+  background-image: url("/selhono/img/images/detailsBG.jpg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: clamp(3.125rem, 2.67rem + 2.27vw, 4.375rem);
+  font-weight: 400;
+  padding: clamp(5.625rem, 3.625rem + 10vw, 11.125rem) 0 90px;
+}
+@media (max-width: 320px) {
+  .projectDetails__title {
+    font-size: 40px;
+  }
+}
+
+.projectDetails__content {
+  padding-top: 118px;
+}
+.projectDetails__content-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: clamp(3.125rem, -59.184rem + 89.41vw, 7.875rem);
+}
+@media (max-width: 1055px) {
+  .projectDetails__content-text {
+    flex-direction: column-reverse;
+  }
+}
+.projectDetails__content-left {
+  color: #4d5053;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5; /* 33px */
+  letter-spacing: 0.22px;
+}
+.projectDetails__table-name {
+  padding-left: 50px;
+  font-family: "Jost";
+}
+.projectDetails__content-right {
+  max-width: 653px;
+}
+.projectDetails__content-title {
+  padding-bottom: 11px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.25; /* 62.5px */
+  letter-spacing: 1px;
+}
+@media (max-width: 590px) {
+  .projectDetails__content-title {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.projectDetails__content-desc {
+  color: #4d5053;
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5; /* 33px */
+  letter-spacing: 0.22px;
+}
+.projectDetails__content-look {
+  margin-top: 118px;
+  position: relative;
+  margin-bottom: clamp(6.25rem, 3.295rem + 14.77vw, 14.375rem);
+}
+.projectDetails__content-look::after {
+  content: "";
+  position: absolute;
+  background-image: url("/selhono/img/details/zoomIc.svg");
+  width: 52px;
+  height: 52px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.projectDetails__content-look img {
+  min-height: 290px;
+}
+@media (max-width: 470px) {
+  .projectDetails__content-look img {
+    min-height: 240px;
+  }
 }/*# sourceMappingURL=main.css.map */
