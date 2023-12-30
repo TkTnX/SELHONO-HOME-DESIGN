@@ -41,10 +41,18 @@
 // * Project
 
 @import "./blocks/project/project-title";
-@import './blocks/project/project-card';
+@import "./blocks/project/project-card";
 
 // * Details
 
-@import './blocks/details/details-title';
-@import './blocks/details/details-content';
+@import "./blocks/details/details-title";
+@import "./blocks/details/details-content";
+
+// * Articles
+
+@import "./blocks/articles/articles-title";
+@import "./blocks/articles/articles-form";
+@import './blocks/articles/articles-lastPost';
+@import './blocks/articles/articles-news';
+
 
