@@ -52,7 +52,14 @@
 
 @import "./blocks/articles/articles-title";
 @import "./blocks/articles/articles-form";
-@import './blocks/articles/articles-lastPost';
-@import './blocks/articles/articles-news';
+@import "./blocks/articles/articles-lastPost";
+@import "./blocks/articles/articles-news";
 
+// * Contact
 
+@import "./blocks/contact/contact-title";
+@import "./blocks/contact/contact-form";
+
+// * Error
+
+@import "./blocks/error/error";
